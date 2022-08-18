@@ -1,7 +1,41 @@
  body {
-            background: lightgrey;
-	
+            background: #fff;
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: 100;
         }
+
+		.header {
+			position: absolute;
+			height: 80px;
+			box-shadow: 0 1px 3px #0000001f,0 1px 2px #0000003d;
+			margin-bottom: 10px;
+			padding: 20px;
+			font-size: 40pt;
+			width: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+
+		.main {
+			padding-top: 130px;
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		.event_box {
+			width: 30%;
+		}
+
+		.status_box {
+			width: 20%;
+		}
+
+		.tab_box {
+			width: 40%;
+		}
 
         button, input, select {
             display: block;
@@ -10,14 +44,45 @@
             cursor: pointer;
         }
 		
-		input{}
+		.input_box{
+			width: 94%;
+			border-radius: 4px;
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+			margin-bottom: 5px;
+			padding: 2px;
+		}
 		
-        button {
-            background: #369;
-            color: #fff;
-            padding: 5px 0;
-            border: none;
-        }
+
+		button {
+			width: 95%;
+			border:0px;
+			height: fit-content;
+			min-height: 48px;
+			border-radius: 4px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			font-size: 20px;
+			font-weight: 500;
+			-webkit-transition-duration: 0.2s;
+			transition-duration: 0.2s;
+			cursor: pointer;
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.19);
+			outline:0;
+			}
+			button:hover {
+			box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 0px 0px 0 rgba(0, 0, 0, 0.0);
+			outline:0;        
+			}
+			.primary {
+			background: #0098a1 0% 0% no-repeat padding-box;
+			color: #fff;
+			}
+			.primary:hover {
+			background: #026776 0% 0% no-repeat padding-box;
+			color: #fff;
+		}
 
         li {
         }
